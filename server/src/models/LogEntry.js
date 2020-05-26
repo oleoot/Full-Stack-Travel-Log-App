@@ -39,6 +39,7 @@ const logEntrySchema = new Schema({
     },
 }, {
     timestamps: true,
+    runValidators: true,
 });
 
 const LogEntry = mongoose.model('LogEntry', logEntrySchema);

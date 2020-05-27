@@ -16,7 +16,8 @@ body {
 }
 
 .popup {
-  max-width: 300px;
+  width: 40vw;
+  max-width: 600px;
 }
 
 .marker.yellow path {
@@ -29,6 +30,7 @@ body {
 
 .entry-form {
   padding: 20px;
+  font-size: 1.5rem;
 }
 
 .entry-form label {
@@ -41,4 +43,18 @@ body {
 .entry-form textarea {
   width: 100%;
   resize: none;
+}
+
+button {
+  font-size: 3rem;
+}
+
+.entry-form button {
+  display: block;
+  margin: 20px auto 0;
+  background: #f8c102;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1.5rem;
 }

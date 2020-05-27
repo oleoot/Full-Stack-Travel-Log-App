@@ -20,6 +20,12 @@ body {
   max-width: 600px;
 }
 
+.popup img {
+  width: 80%;
+  display: block;
+  margin: 50px auto;
+}
+
 .marker.yellow path {
   fill: #f8c102;
 }

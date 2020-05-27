@@ -15,7 +15,6 @@ const LogEntryForm = ({ location, onClose }) => {
             data.latitude = location.latitude;
             data.longitude = location.longitude;
             const created = await createLogEntry(data);
-            console.log(created)
             onClose();
         } catch (error) {
             console.error(error);
@@ -29,12 +28,14 @@ const LogEntryForm = ({ location, onClose }) => {
             {error ? <h3 className="error">{error}</h3> : null}
             <label htmlFor="title">Title</label>
             <input type="text" name="title" required ref={register} />
+            <label htmlFor="rating">Rating</label>
+            <input type="number" name="rating" required ref={register} />
             <label htmlFor="comments">Comments</label>
-            <textarea name="title" rows={3} ref={register}></textarea>
+            <textarea name="comments" rows={3} ref={register}></textarea>
             <label htmlFor="description">Description</label>
             <textarea name="description" rows={3} ref={register}></textarea>
             <label htmlFor="image">Image</label>
-            <input type="text" name="image" />
+            <input name="image" ref={register} />
             <label htmlFor="visitDate">Visit Date</label>
             <input type="date" name="visitDate" required ref={register} />
             <button disabled={loading}>{loading ? 'Loading...' : 'Create Entry'}</button>

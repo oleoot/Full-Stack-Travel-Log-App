@@ -26,3 +26,19 @@ body {
 .marker.red path {
   fill: #f05305;
 }
+
+.entry-form {
+  padding: 20px;
+}
+
+.entry-form label {
+  margin: 10px 0 5px 0;
+  display: block;
+  width: 100%;
+}
+
+.entry-form input,
+.entry-form textarea {
+  width: 100%;
+  resize: none;
+}

@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000';
+const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://travel-log-app-ten.now.sh';
 
 
 export async function listLogEntries() {
